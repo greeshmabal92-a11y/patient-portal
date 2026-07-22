@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointments | Patient Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+         Book Appointment Modal
+    ============================ -->
+
+    <div id="appointmentModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Book Appointment</h2>
+
+                <span class="close">&times;</span>
+
+            </div>
+
+            <form id="appointmentForm">
+
+                <input
+                    id="patientName"
+                    class="input"
+                    type="text"
+                    placeholder="Patient Name">
+
+                <input
+                    id="doctor"
+                    class="input"
+                    type="text"
+                    placeholder="Doctor">
+
+                <input
+                    id="department"
+                    class="input"
+                    type="text"
+                    placeholder="Department">
+
+                <input
+                    id="appointmentDate"
+                    class="input"
+                    type="date">
+
+                <input
+                    id="appointmentTime"
+                    class="input"
+                    type="time">
+
+                <textarea
+                    id="notes"
+                    class="input"
+                    rows="4"
+                    placeholder="Notes"></textarea>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Book Appointment
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- View Appointment Modal -->
+
+    <div id="viewAppointmentModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Appointment Details</h2>
+
+                <span class="close-view">&times;</span>
+
+            </div>
+
+            <div class="details">
+
+                <p><strong>Patient:</strong> <span id="viewPatient"></span></p>
+
+                <p><strong>Doctor:</strong> <span id="viewDoctor"></span></p>
+
+                <p><strong>Department:</strong> <span id="viewDepartment"></span></p>
+
+                <p><strong>Date:</strong> <span id="viewDate"></span></p>
+
+                <p><strong>Time:</strong> <span id="viewTime"></span></p>
+
+                <p><strong>Notes:</strong> <span id="viewNotes"></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===========================
+         Application
+    ============================ -->
+
+    <div class="app">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                Patient Portal
+            </div>
+
+            <nav>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='index.html'">
+
+                    Dashboard
+
+                </button>
+
+                <button
+                    class="nav-item active">
+
+                    Appointments
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='medical-records.html'">
+
+                    Medical Records
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='lab-results.html'">
+
+                    Lab Results
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='prescriptions.html'">
+
+                    Prescriptions
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='profile.html'">
+
+                    Profile
+
+                </button>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Appointments</h1>
+
+                    <p>
+                        View and manage your appointments.
+                    </p>
+
+                </div>
+
+                <button
+                    id="openAppointmentModal"
+                    class="btn btn-primary">
+
+                    + Book Appointment
+
+                </button>
+
+            </header>
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchAppointment"
+                    class="input"
+                    placeholder="Search appointments...">
+
+            </div>
+
+            <!-- Appointment Table -->
+
+            <section class="card">
+
+                <h2>Upcoming Appointments</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Doctor</th>
+                            <th>Department</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!-- JavaScript will populate appointments here -->
+
+                    <tbody id="appointmentsTable">
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/appointments.js"></script>
+
+</body>
+
+</html>

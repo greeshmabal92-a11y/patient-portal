@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medical Records | Patient Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+         View Medical Record Modal
+    ============================ -->
+
+    <div id="recordModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Medical Record</h2>
+
+                <span class="close-view">&times;</span>
+
+            </div>
+
+            <div class="details">
+
+                <p><strong>Patient:</strong> <span id="recordPatient"></span></p>
+
+                <p><strong>Doctor:</strong> <span id="recordDoctor"></span></p>
+
+                <p><strong>Diagnosis:</strong> <span id="recordDiagnosis"></span></p>
+
+                <p><strong>Treatment:</strong> <span id="recordTreatment"></span></p>
+
+                <p><strong>Visit Date:</strong> <span id="recordDate"></span></p>
+
+                <p><strong>Status:</strong> <span id="recordStatus"></span></p>
+
+                <p><strong>Notes:</strong> <span id="recordNotes"></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===========================
+         Application
+    ============================ -->
+
+    <div class="app">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                Patient Portal
+            </div>
+
+            <nav>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='index.html'">
+
+                    Dashboard
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='appointments.html'">
+
+                    Appointments
+
+                </button>
+
+                <button
+                    class="nav-item active">
+
+                    Medical Records
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='lab-results.html'">
+
+                    Lab Results
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='prescriptions.html'">
+
+                    Prescriptions
+
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='profile.html'">
+
+                    Profile
+
+                </button>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Medical Records</h1>
+
+                    <p>
+                        View your medical history and treatment records.
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchRecord"
+                    class="input"
+                    placeholder="Search medical records...">
+
+            </div>
+
+            <!-- Medical Records Table -->
+
+            <section class="card">
+
+                <h2>Medical History</h2>
+
+                <table id="recordsTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Doctor</th>
+                            <th>Diagnosis</th>
+                            <th>Treatment</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>10 Jul 2026</td>
+                            <td>Dr. Smith</td>
+                            <td>Hypertension</td>
+                            <td>Medication</td>
+
+                            <td>
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>15 Jun 2026</td>
+                            <td>Dr. Wilson</td>
+                            <td>Eczema</td>
+                            <td>Topical Cream</td>
+
+                            <td>
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>22 May 2026</td>
+                            <td>Dr. Johnson</td>
+                            <td>Migraine</td>
+                            <td>Pain Relief</td>
+
+                            <td>
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="js/app.js"></script>
+    <script src="js/medical-records.js"></script>
+
+</body>
+
+</html>

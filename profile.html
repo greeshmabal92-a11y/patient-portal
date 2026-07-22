@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Patient Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            Patient Portal
+        </div>
+
+        <nav>
+
+            <button class="nav-item"
+                onclick="location.href='index.html'">
+                Dashboard
+            </button>
+
+            <button class="nav-item"
+                onclick="location.href='appointments.html'">
+                Appointments
+            </button>
+
+            <button class="nav-item"
+                onclick="location.href='medical-records.html'">
+                Medical Records
+            </button>
+
+            <button class="nav-item"
+                onclick="location.href='lab-results.html'">
+                Lab Results
+            </button>
+
+            <button class="nav-item"
+                onclick="location.href='prescriptions.html'">
+                Prescriptions
+            </button>
+
+            <button class="nav-item active">
+                Profile
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>My Profile</h1>
+
+                <p>
+                    View and manage your personal information.
+                </p>
+
+            </div>
+
+        </header>
+
+        <section class="card">
+
+            <h2>Personal Information</h2>
+
+            <table>
+
+                <tbody>
+
+                    <tr>
+                        <th>Full Name</th>
+                        <td id="name">Greeshma</td>
+                    </tr>
+
+                    <tr>
+                        <th>Date of Birth</th>
+                        <td id="dob">15 May 1993</td>
+                    </tr>
+
+                    <tr>
+                        <th>Gender</th>
+                        <td id="gender">Female</td>
+                    </tr>
+
+                    <tr>
+                        <th>Blood Group</th>
+                        <td id="blood">O+</td>
+                    </tr>
+
+                    <tr>
+                        <th>Email</th>
+                        <td id="email">greeshma@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <th>Phone</th>
+                        <td id="phone">+91 8606108264</td>
+                    </tr>
+
+                    <tr>
+                        <th>Address</th>
+                        <td id="address">
+                            Kochi, Kerala, India
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Emergency Contact</th>
+                        <td id="emergency">
+                            +91 8606108264
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Insurance</th>
+                        <td id="insurance">
+                            HealthCare Plus
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <br>
+
+            <button
+                id="editProfileBtn"
+                class="btn btn-primary">
+
+                Edit Profile
+
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

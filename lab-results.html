@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab Results | Patient Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+         View Lab Result Modal
+    ============================ -->
+
+    <div id="labResultModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Lab Result Details</h2>
+
+                <span class="close-view">&times;</span>
+
+            </div>
+
+            <div class="details">
+
+                <p><strong>Patient:</strong> <span id="viewPatient"></span></p>
+
+                <p><strong>Doctor:</strong> <span id="viewDoctor"></span></p>
+
+                <p><strong>Test Name:</strong> <span id="viewTest"></span></p>
+
+                <p><strong>Date:</strong> <span id="viewDate"></span></p>
+
+                <p><strong>Result:</strong> <span id="viewResult"></span></p>
+
+                <p><strong>Status:</strong> <span id="viewStatus"></span></p>
+
+                <p><strong>Remarks:</strong> <span id="viewRemarks"></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===========================
+         Application
+    ============================ -->
+
+    <div class="app">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                Patient Portal
+            </div>
+
+            <nav>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='index.html'">
+                    Dashboard
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='appointments.html'">
+                    Appointments
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='medical-records.html'">
+                    Medical Records
+                </button>
+
+                <button
+                    class="nav-item active">
+                    Lab Results
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='prescriptions.html'">
+                    Prescriptions
+                </button>
+
+                <button
+                    class="nav-item"
+                    onclick="location.href='profile.html'">
+                    Profile
+                </button>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Lab Results</h1>
+
+                    <p>
+                        View your laboratory test reports.
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchLab"
+                    class="input"
+                    placeholder="Search lab results...">
+
+            </div>
+
+            <!-- Lab Results Table -->
+
+            <section class="card">
+
+                <h2>Recent Lab Results</h2>
+
+                <table id="labResultsTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Test Name</th>
+                            <th>Doctor</th>
+                            <th>Result</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>15 Jul 2026</td>
+                            <td>Complete Blood Count</td>
+                            <td>Dr. Smith</td>
+                            <td>Normal</td>
+
+                            <td>
+
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>20 Jun 2026</td>
+                            <td>Blood Sugar</td>
+                            <td>Dr. Wilson</td>
+                            <td>High</td>
+
+                            <td>
+
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>10 May 2026</td>
+                            <td>Lipid Profile</td>
+                            <td>Dr. Johnson</td>
+                            <td>Borderline</td>
+
+                            <td>
+
+                                <span class="badge badge-success">
+                                    Completed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button class="btn btn-secondary view-btn">
+                                    View
+                                </button>
+
+                                <button class="btn btn-primary download-btn">
+                                    Download
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/lab-results.js"></script>
+
+</body>
+
+</html>
