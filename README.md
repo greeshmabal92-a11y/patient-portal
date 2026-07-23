@@ -3,6 +3,14 @@
 
 A responsive Healthcare Patient Portal built using **HTML, CSS, and JavaScript**. The application allows patients to manage appointments, access healthcare information, and maintain their profile through an intuitive and responsive user interface.
 
+## 🌐 Live Demo
+
+https://greeshmabal92-a11y.github.io/patient-portal/
+
+## 📁 Repository
+
+https://github.com/greeshmabal92-a11y/patient-portal
+
 
 ### 📊 Dashboard
 - Provides an overview of the patient portal.
@@ -81,13 +89,7 @@ patient-portal/
 
 
 
-## 🌐 Live Demo
 
-https://greeshmabal92-a11y.github.io/patient-portal/
-
-## 📁 Repository
-
-https://github.com/greeshmabal92-a11y/patient-portal
 
 ## Author
 
