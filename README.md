@@ -80,7 +80,9 @@ patient-portal/
 │   ├── profile.js
 │   └── storage.js
 ├── assets/
-│   └── patient-portal.png
+  └── patient-portal.png
+
+
 
 ## 🌐 Live Demo
 
