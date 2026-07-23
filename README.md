@@ -5,7 +5,7 @@ A responsive Healthcare Patient Portal built using **HTML, CSS, and JavaScript**
 
 ## 📸 Screenshot
 
-![Patient-Portal](assets/patient-portal.png)
+![Patient-Portal] (assets/patient-portal.png)
 
 ### 📊 Dashboard
 - Provides an overview of the patient portal.
