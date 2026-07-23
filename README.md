@@ -3,9 +3,6 @@
 
 A responsive Healthcare Patient Portal built using **HTML, CSS, and JavaScript**. The application allows patients to manage appointments, access healthcare information, and maintain their profile through an intuitive and responsive user interface.
 
-## 📸 Screenshot
-
-![Patient-Portal](assets/patient-portal.png)
 
 ### 📊 Dashboard
 - Provides an overview of the patient portal.
